@@ -1,0 +1,59 @@
+body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    max-width: 1590px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+            "header header header"
+            "topnav topnav topnav"
+            "article article aside"
+            "footer footer footer";
+
+    grid-gap: 10px;
+    height: 100%;
+
+}
+header{
+    background-color: lightgray;
+    grid-area: header;
+    padding-left: 15px;
+}
+
+.topnav{
+    background-color: blue;
+    grid-area: topnav;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+}
+article{
+    background-color: lightgray;
+    grid-area: article;
+    padding-left: 15px;
+
+
+}
+aside{
+    background-color: lightgray;
+    grid-area: aside;
+    padding-left: 15px;
+}
+footer{
+    background-color: lightgray;
+    grid-area: footer;
+    padding-left: 15px;
+
+}
+a{
+    color: white;
+}
+
+
+
+
